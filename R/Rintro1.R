@@ -74,7 +74,7 @@ str(v4)
 
 ### generate a logical vector
 v5 <- c(TRUE, FALSE, FALSE, TRUE, FALSE)
-
+v5[4]
 ### Factors
 v2
 v2a <- factor(v2)
