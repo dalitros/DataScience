@@ -12,7 +12,7 @@ library(dplyr)
 class(iris)
 
 iris2 <- as_data_frame(iris)   ## function imported to dplyr from the 'tibble' package
-
+iris2 <- as_tibble(iris)   
 class(iris2)
 
 iris
