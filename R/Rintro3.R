@@ -571,3 +571,9 @@ sql <- "SELECT * FROM acs2015_country_data"
 acs <- dbGetQuery(con, sql)
 dbDisconnect(con)
 
+library(DBI)
+con <- dbConnect(odbc::odbc(), "COLLEGE", timeout = 10)
+sql <- "SELECT * FROM acs2015_country_data"
+acs <- dbGetQuery(con, sql)
+dbDisconnect(con)
+students <- dbReadTable(con,"Students")             
