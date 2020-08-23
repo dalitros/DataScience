@@ -8,6 +8,9 @@ library(ggplot2)
 titanic <- read.csv(paste(path,"../data/titanic.csv",sep="/"))
 head(titanic)
 
+library(readr)
+titanic <- read_csv("C:/Users/dalit/DataScience/R/titanic.csv")
+View(titanic)
 ##################################################
 ### Number of pasangers and how much survived
 ##################################################
@@ -198,12 +201,13 @@ titanic %>%
 ##  (must be titles), and with them we will create a new column. Then we will procede as 
 ##  we did in the other analyses.
 ############################################
-
+#collapse join the word with the sigh between the " "
 words = paste(titanic$Name, collapse=" ")
 class(words)
 print(words)
 
 ## we can use the :punct: opperand from the re (regular expression) package:
+#now we need to remove the panctuations. 
 
 words = gsub('[[:punct:] ]+',' ',words)
 print(words)
@@ -218,12 +222,14 @@ print(words)
 ## strsplit generates a list with one element that is a vector of strings
 ## we are only interested on the vector, so we get it adding the [[1]]
 
+#this produce a list like dictionary in python. create vetor of words and put in list. 
 wordlist = strsplit(words," ")[[1]]
 class(wordlist)
 length(wordlist)
 wordlist
 wordcnt <- data.frame(table(wordlist))
-
+#create a table and count the number of every word
+#now the frequncy of every word
 wordcnt %>% arrange(desc(Freq)) %>% top_n(15)
 
 ## We have shown here that the most common titles were Mr (521), Miss (182), Mrs (129) 
@@ -232,7 +238,7 @@ wordcnt %>% arrange(desc(Freq)) %>% top_n(15)
 ## survival among them.
 
 titanic$Title <- "Other"
-
+#we use grep in order to find in the word "_"
 titanic[grep("Miss", titanic$Name,fixed = T),"Title"] <- "Miss"
 titanic[grep("Mr", titanic$Name,fixed = T),"Title"] <- "Mr"
 titanic[grep("Mrs", titanic$Name,fixed = T),"Title"] <- "Mrs"
