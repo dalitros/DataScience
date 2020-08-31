@@ -1,11 +1,11 @@
 ###########################################
 ####  
-###########################################
+#########x3 <- mtcars$wt
+##################################
 
 # Data
 x1 <- mtcars$cyl
 x2 <- mtcars$mpg
-x3 <- mtcars$wt
 x4 <- mtcars$qsec
 
 # Central Tendency Measures
