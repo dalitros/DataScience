@@ -1,6 +1,8 @@
 library(dplyr)
 library(mechkar)
 library(car)
+library(tidyr)
+library(tidyverse)
 
 ############################################
 ##  Linear Regression
@@ -21,11 +23,23 @@ hist(cars$dist)
 mod1 <- lm(cars$dist ~ cars$speed)
 pred1 <- predict(mod1)
 
-##### plot the model
+##### plot the model. abline produce straight line. 
+##### abline reg take the best
 plot(cars$dist ~ cars$speed)
 abline(reg=mod1, col="red")
+abline(h=50, col="green")
+abline(v=15, col="green")
 
+###comparison of the prediction to the plot
 plot(pred1 ~ cars$dist)
+
+### linear regression function. 
+yhat <- funtion(x) {
+ return((3.9324 * x) + -17.5791)
+}
+yhat(4)
+
+mod1$coefficients[2]
 
 ##### summary
 summary(mod1)
@@ -63,9 +77,13 @@ summary(mod4)
 
 Table2(mod4)
 
+vif(mod4)
+
 ### multivariable model
 mod5 <- lm(mpg ~ . ,data=mtcars)
 summary(mod5)
+
+plot(mtcars$cyl ~ mtcars$hp)
 
 Table2(mod5)
 
@@ -78,7 +96,26 @@ pairs(mtcars)
 
 ######################
 
-bodyfat <- read.csv("~/BIDS/stats/bodyfat.tab", sep="")
+bodyfat <- read.csv("C:/Users/dalit/DataScience/data/bodyfat.csv", sep="")
+head(bodyfat)
+
+
+bfmod1 <- lm(body_fat_pct ~ ., data=bodyfat)
+pred_bf <- predict(bfmod1)
+summary(bfmod1)
+
+plot(pred_bf ~ bodyfat$body_fat_pct)
+abline(reg=pred_bf, col="red")
+
+vif(bfmod1)
+summary(pred_bf)
+####name all the names
+nm <- (bfmod1)
+###the difference between two vec
+nm <- setdiff(nm,c("wrist","knee"))
+as.character.numeric_version(nm)
+data.frame(nm)
+bfmod1 <- lm(body_fat_pct ~ ., data=bodyfat[,nm])
 
 ############################################
 ##   Logistic Regression
@@ -138,24 +175,43 @@ Table2.forestplot(mod8)
 ##########
 
 
-happy <- read_csv("SomervilleHappinessSurvey2015.csv")
+happy <- read_csv("C:/Users/dalit/DataScience/data/SomervilleHappinessSurvey2015.csv")
+head(happy)
+summary(happy)
 
+mod9 <-glm(D~., data=happy, family="binomial")
+summary(mod9)
+mod9
+
+exp(mod9$coefficients)
+
+mod9b <- step(mod9, direction = "forward")
+summary(mod9b)
+
+mod9c <- step(mod9, direction = "backward")
+summary(mod9c)
+
+mod9d <- step(mod9, direction = 'both')
+summary(mod9d)
 ############################################
 ## Poisson Regression
 ############################################
 
 df <- warpbreaks
-
+summary(df)
 head(df)
+hist(df$breaks)
 
-mod9 <- glm(breaks ~ ., data=df, family = "poisson")
-summary(mod9)
+mod10 <- glm(breaks ~ ., data=df, family = "poisson")
+summary(mod10)
 
-pred9 <- predict(mod9,type="response")
-hist(pred9)
+pred10 <- predict(mod10,type="response")
+hist(pred10)
 
-plot(df$breaks ~ pred9)
+plot(df$breaks ~ pred10)
+##log transforming the data make it normal. 
+hist(log(df$breaks, breaks=10))
 
-Table2(mod9)
+mechkar::Table2(mod10)
 
 

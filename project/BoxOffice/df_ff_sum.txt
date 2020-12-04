@@ -1,0 +1,596 @@
+	Var1	Var2	Freq	Freq_val				var_name	min	1st Qu.	median 	mean	3st Qu.	max	Na																											
+1		movie_id	Min.   	1			movie_title	#N/A	0	0	8000000	22666657	29000000	380000000																												
+2		movie_id	1st Qu.	1848			budget	budget	0	0	8000000	22666657	29000000	380000000																												
+3		movie_id	Median 	3696			release_date	release_date																																		
+4		movie_id	Mean   	3698			sw_lang_en	sw_lang_en	0	1	1	0.8591	1	1																												
+5		movie_id	3rd Qu.	5550			sw_tagline	sw_tagline																																		
+6		movie_id	Max.   	7398			release_month	release_month																																		
+7		movie_id	NA				seasonality	seasonality																																		
+8		budget	Min.   	0			countries_cnt	countries_cnt																																		
+9		budget	1st Qu.	0			lang_RU	lang_RU																																		
+10		budget	Median 	8000000			actor0_movies_cnt	actor0_movies_cnt																																		
+11		budget	Mean   	22666657			actor1_movies_5y_cnt	actor1_movies_5y_cnt																																		
+12		budget	3rd Qu.	29000000			sw_female_actor0	sw_female_actor0																																		
+13		budget	Max.   	380000000			sw_male_actor0	sw_male_actor0																																		
+14		budget	NA				actor0_prev_revenue	actor0_prev_revenue																																		
+15		original_language	Length	7375			director_movies_cnt	director_movies_cnt																																		
+16		original_language	Class 	character  			genre_fantasy	genre_fantasy							budget	release_date	sw_lang_en	sw_tagline	release_month	seasonality	countries_cnt	lang_RU	actor0_movies_cnt	actor1_movies_5y_cnt	sw_female_actor0	sw_male_actor0	actor0_prev_revenue	director_movies_cnt	genre_fantasy	genre_horror	genre_history	genre_crime	genre_mystery	genre_family	depart_art	depart_custom_mkup	depart_lighting	depart_visual_effects	depart_camera_female	depart_directing_female	depart_production_female	depart_Writing_female
+17		original_language	Mode  	character  			genre_horror	genre_horror																																		
+18		original_language	NA				genre_history	genre_history																																		
+19		original_language	NA				genre_crime	genre_crime																																		
+20		original_language	NA				genre_mystery	genre_mystery																																		
+21		original_language	NA				genre_family	genre_family																																		
+22		popularity	Min.   	0			depart_art	depart_Art																																		
+23		popularity	1st Qu.	3.97			depart_custom_mkup	depart_Custom_Mkup																																		
+24		popularity	Median 	7.456			depart_lighting	depart_Lighting																																		
+25		popularity	Mean   	8.54			depart_visual_effects	depart_Visual_Effects																																		
+26		popularity	3rd Qu.	10.932			depart_camera_female	depart_Camera_female																																		
+27		popularity	Max.   	547.488			depart_directing_female	depart_Directing_female																																		
+28		popularity	NA				depart_production_female	depart_Production_female																																		
+29		release_date	Length	7375			depart_Writing_female	depart_Writing_female																																		
+30		release_date	Class 	character  			job interraction	#N/A																																		
+31		release_date	Mode  	character  																																						
+32		release_date	NA																																							
+33		release_date	NA																																							
+34		release_date	NA																																							
+35		release_date	NA																																							
+36		runtime	Min.   	0																																						
+37		runtime	1st Qu.	94																																						
+38		runtime	Median 	104																																						
+39		runtime	Mean   	107.7																																						
+40		runtime	3rd Qu.	118																																						
+41		runtime	Max.   	338																																						
+42		runtime	NA's   	5																																						
+43		runtime_cat	Length	7375																																						
+44		runtime_cat	Class 	character  																																						
+45		runtime_cat	Mode  	character  																																						
+46		runtime_cat	NA																																							
+47		runtime_cat	NA																																							
+48		runtime_cat	NA																																							
+49		runtime_cat	NA																																							
+50		revenue	Min.   	1.00E+00																																						
+51		revenue	1st Qu.	2.41E+06																																						
+52		revenue	Median 	1.69E+07																																						
+53		revenue	Mean   	6.69E+07																																						
+54		revenue	3rd Qu.	6.91E+07																																						
+55		revenue	Max.   	1.52E+09																																						
+56		revenue	NA's   	4382																																						
+57		sw_lang_en	Min.   	0																																						
+58		sw_lang_en	1st Qu.	1																																						
+59		sw_lang_en	Median 	1																																						
+60		sw_lang_en	Mean   	0.8591																																						
+61		sw_lang_en	3rd Qu.	1																																						
+62		sw_lang_en	Max.   	1																																						
+63		sw_lang_en	NA																																							
+64		sw_web_presence	Min.   	0																																						
+65		sw_web_presence	1st Qu.	0																																						
+66		sw_web_presence	Median 	0																																						
+67		sw_web_presence	Mean   	0.3204																																						
+68		sw_web_presence	3rd Qu.	1																																						
+69		sw_web_presence	Max.   	1																																						
+70		sw_web_presence	NA																																							
+71		sw_has_poster	Min.   	0																																						
+72		sw_has_poster	1st Qu.	1																																						
+73		sw_has_poster	Median 	1																																						
+74		sw_has_poster	Mean   	0.9997																																						
+75		sw_has_poster	3rd Qu.	1																																						
+76		sw_has_poster	Max.   	1																																						
+77		sw_has_poster	NA																																							
+78		sw_tagline	Min.   	0																																						
+79		sw_tagline	1st Qu.	1																																						
+80		sw_tagline	Median 	1																																						
+81		sw_tagline	Mean   	0.8045																																						
+82		sw_tagline	3rd Qu.	1																																						
+83		sw_tagline	Max.   	1																																						
+84		sw_tagline	NA																																							
+85		keyword_cnt	Min.   	0																																						
+86		keyword_cnt	1st Qu.	3																																						
+87		keyword_cnt	Median 	6																																						
+88		keyword_cnt	Mean   	7.265																																						
+89		keyword_cnt	3rd Qu.	10																																						
+90		keyword_cnt	Max.   	149																																						
+91		keyword_cnt	NA																																							
+92		release_year	Min.   	1918																																						
+93		release_year	1st Qu.	1992																																						
+94		release_year	Median 	2004																																						
+95		release_year	Mean   	2000																																						
+96		release_year	3rd Qu.	2011																																						
+97		release_year	Max.   	2017																																						
+98		release_year	NA's   	1																																						
+99		release_month	Min.   	1																																						
+100		release_month	1st Qu.	4																																						
+101		release_month	Median 	7																																						
+102		release_month	Mean   	6.844																																						
+103		release_month	3rd Qu.	10																																						
+104		release_month	Max.   	12																																						
+105		release_month	NA's   	1																																						
+106		high_release_month	Min.   	0																																						
+107		high_release_month	1st Qu.	0																																						
+108		high_release_month	Median 	0																																						
+109		high_release_month	Mean   	0.3997																																						
+110		high_release_month	3rd Qu.	1																																						
+111		high_release_month	Max.   	1																																						
+112		high_release_month	NA																																							
+113		release_day	Min.   	1																																						
+114		release_day	1st Qu.	8																																						
+115		release_day	Median 	15																																						
+116		release_day	Mean   	15.25																																						
+117		release_day	3rd Qu.	22																																						
+118		release_day	Max.   	31																																						
+119		release_day	NA's   	1																																						
+120		seasonality	Min.   	-50746591																																						
+121		seasonality	1st Qu.	-33273015																																						
+122		seasonality	Median 	-15309317																																						
+123		seasonality	Mean   	-1337484																																						
+124		seasonality	3rd Qu.	32322910																																						
+125		seasonality	Max.   	74205073																																						
+126		seasonality	NA's   	1																																						
+127		sw_collection	Min.   	0																																						
+128		sw_collection	1st Qu.	0																																						
+129		sw_collection	Median 	0																																						
+130		sw_collection	Mean   	0.02942																																						
+131		sw_collection	3rd Qu.	0																																						
+132		sw_collection	Max.   	2																																						
+133		sw_collection	NA																																							
+134		producers_cnt	Min.   	1																																						
+135		producers_cnt	1st Qu.	1																																						
+136		producers_cnt	Median 	2																																						
+137		producers_cnt	Mean   	2.908																																						
+138		producers_cnt	3rd Qu.	4																																						
+139		producers_cnt	Max.   	26																																						
+140		producers_cnt	NA's   	395																																						
+141		countries_cnt	Min.   	0																																						
+142		countries_cnt	1st Qu.	1																																						
+143		countries_cnt	Median 	1																																						
+144		countries_cnt	Mean   	1.335																																						
+145		countries_cnt	3rd Qu.	1																																						
+146		countries_cnt	Max.   	12																																						
+147		countries_cnt	NA																																							
+148		lang_US	Min.   	0																																						
+149		lang_US	1st Qu.	1																																						
+150		lang_US	Median 	1																																						
+151		lang_US	Mean   	0.8735																																						
+152		lang_US	3rd Qu.	1																																						
+153		lang_US	Max.   	1																																						
+154		lang_US	NA																																							
+155		lang_FR	Min.   	0																																						
+156		lang_FR	1st Qu.	0																																						
+157		lang_FR	Median 	0																																						
+158		lang_FR	Mean   	0.09641																																						
+159		lang_FR	3rd Qu.	0																																						
+160		lang_FR	Max.   	1																																						
+161		lang_FR	NA																																							
+162		lang_RU	Min.   	0																																						
+163		lang_RU	1st Qu.	0																																						
+164		lang_RU	Median 	0																																						
+165		lang_RU	Mean   	0.04854																																						
+166		lang_RU	3rd Qu.	0																																						
+167		lang_RU	Max.   	1																																						
+168		lang_RU	NA																																							
+169		lang_ES	Min.   	0																																						
+170		lang_ES	1st Qu.	0																																						
+171		lang_ES	Median 	0																																						
+172		lang_ES	Mean   	0.0758																																						
+173		lang_ES	3rd Qu.	0																																						
+174		lang_ES	Max.   	1																																						
+175		lang_ES	NA																																							
+176		lang_JA	Min.   	0																																						
+177		lang_JA	1st Qu.	0																																						
+178		lang_JA	Median 	0																																						
+179		lang_JA	Mean   	0.02766																																						
+180		lang_JA	3rd Qu.	0																																						
+181		lang_JA	Max.   	1																																						
+182		lang_JA	NA																																							
+183		keywords_cnt	Min.   	0																																						
+184		keywords_cnt	1st Qu.	3																																						
+185		keywords_cnt	Median 	6																																						
+186		keywords_cnt	Mean   	7.265																																						
+187		keywords_cnt	3rd Qu.	10																																						
+188		keywords_cnt	Max.   	149																																						
+189		keywords_cnt	NA																																							
+190		actor0_movies_cnt	Min.   	0																																						
+191		actor0_movies_cnt	1st Qu.	0																																						
+192		actor0_movies_cnt	Median 	4																																						
+193		actor0_movies_cnt	Mean   	7.19																																						
+194		actor0_movies_cnt	3rd Qu.	11																																						
+195		actor0_movies_cnt	Max.   	65																																						
+196		actor0_movies_cnt	NA																																							
+197		actor0_movies_5y_cnt	Min.   	0																																						
+198		actor0_movies_5y_cnt	1st Qu.	0																																						
+199		actor0_movies_5y_cnt	Median 	2																																						
+200		actor0_movies_5y_cnt	Mean   	2.769																																						
+201		actor0_movies_5y_cnt	3rd Qu.	5																																						
+202		actor0_movies_5y_cnt	Max.   	16																																						
+203		actor0_movies_5y_cnt	NA																																							
+204		actor1_movies_cnt	Min.   	0																																						
+205		actor1_movies_cnt	1st Qu.	0																																						
+206		actor1_movies_cnt	Median 	2																																						
+207		actor1_movies_cnt	Mean   	5.405																																						
+208		actor1_movies_cnt	3rd Qu.	8																																						
+209		actor1_movies_cnt	Max.   	67																																						
+210		actor1_movies_cnt	NA																																							
+211		actor1_movies_5y_cnt	Min.   	0																																						
+212		actor1_movies_5y_cnt	1st Qu.	0																																						
+213		actor1_movies_5y_cnt	Median 	1																																						
+214		actor1_movies_5y_cnt	Mean   	2.261																																						
+215		actor1_movies_5y_cnt	3rd Qu.	4																																						
+216		actor1_movies_5y_cnt	Max.   	17																																						
+217		actor1_movies_5y_cnt	NA																																							
+218		actor2_movies_cnt	Min.   	0																																						
+219		actor2_movies_cnt	1st Qu.	0																																						
+220		actor2_movies_cnt	Median 	2																																						
+221		actor2_movies_cnt	Mean   	4.773																																						
+222		actor2_movies_cnt	3rd Qu.	7																																						
+223		actor2_movies_cnt	Max.   	68																																						
+224		actor2_movies_cnt	NA																																							
+225		actor2_movies_5y_cnt	Min.   	0																																						
+226		actor2_movies_5y_cnt	1st Qu.	0																																						
+227		actor2_movies_5y_cnt	Median 	1																																						
+228		actor2_movies_5y_cnt	Mean   	1.915																																						
+229		actor2_movies_5y_cnt	3rd Qu.	3																																						
+230		actor2_movies_5y_cnt	Max.   	15																																						
+231		actor2_movies_5y_cnt	NA																																							
+232		sw_female_actor0	Min.   	0																																						
+233		sw_female_actor0	1st Qu.	0																																						
+234		sw_female_actor0	Median 	0																																						
+235		sw_female_actor0	Mean   	0.2333																																						
+236		sw_female_actor0	3rd Qu.	0																																						
+237		sw_female_actor0	Max.   	1																																						
+238		sw_female_actor0	NA's   	934																																						
+239		sw_female_actor1	Min.   	0																																						
+240		sw_female_actor1	1st Qu.	0																																						
+241		sw_female_actor1	Median 	0																																						
+242		sw_female_actor1	Mean   	0.3792																																						
+243		sw_female_actor1	3rd Qu.	1																																						
+244		sw_female_actor1	Max.   	1																																						
+245		sw_female_actor1	NA's   	782																																						
+246		sw_female_actor2	Min.   	0																																						
+247		sw_female_actor2	1st Qu.	0																																						
+248		sw_female_actor2	Median 	0																																						
+249		sw_female_actor2	Mean   	0.3379																																						
+250		sw_female_actor2	3rd Qu.	1																																						
+251		sw_female_actor2	Max.   	1																																						
+252		sw_female_actor2	NA's   	788																																						
+253		sw_male_actor0	Min.   	0																																						
+254		sw_male_actor0	1st Qu.	0																																						
+255		sw_male_actor0	Median 	1																																						
+256		sw_male_actor0	Mean   	0.6941																																						
+257		sw_male_actor0	3rd Qu.	1																																						
+258		sw_male_actor0	Max.   	1																																						
+259		sw_male_actor0	NA's   	934																																						
+260		sw_male_actor1	Min.   	0																																						
+261		sw_male_actor1	1st Qu.	0																																						
+262		sw_male_actor1	Median 	1																																						
+263		sw_male_actor1	Mean   	0.5171																																						
+264		sw_male_actor1	3rd Qu.	1																																						
+265		sw_male_actor1	Max.   	1																																						
+266		sw_male_actor1	NA's   	782																																						
+267		sw_male_actor2	Min.   	0																																						
+268		sw_male_actor2	1st Qu.	0																																						
+269		sw_male_actor2	Median 	1																																						
+270		sw_male_actor2	Mean   	0.5436																																						
+271		sw_male_actor2	3rd Qu.	1																																						
+272		sw_male_actor2	Max.   	1																																						
+273		sw_male_actor2	NA's   	788																																						
+274		actor0_prev_revenue	Min.   	1.00E+00																																						
+275		actor0_prev_revenue	1st Qu.	4.43E+07																																						
+276		actor0_prev_revenue	Median 	1.52E+08																																						
+277		actor0_prev_revenue	Mean   	2.23E+08																																						
+278		actor0_prev_revenue	3rd Qu.	3.11E+08																																						
+279		actor0_prev_revenue	Max.   	1.52E+09																																						
+280		actor0_prev_revenue	NA's   	2752																																						
+281		actor1_prev_revenue	Min.   	1.00E+00																																						
+282		actor1_prev_revenue	1st Qu.	3.51E+07																																						
+283		actor1_prev_revenue	Median 	1.26E+08																																						
+284		actor1_prev_revenue	Mean   	2.05E+08																																						
+285		actor1_prev_revenue	3rd Qu.	2.68E+08																																						
+286		actor1_prev_revenue	Max.   	1.52E+09																																						
+287		actor1_prev_revenue	NA's   	3201																																						
+288		actor2_prev_revenue	Min.   	1.00E+00																																						
+289		actor2_prev_revenue	1st Qu.	3.09E+07																																						
+290		actor2_prev_revenue	Median 	1.11E+08																																						
+291		actor2_prev_revenue	Mean   	1.96E+08																																						
+292		actor2_prev_revenue	3rd Qu.	2.51E+08																																						
+293		actor2_prev_revenue	Max.   	1.52E+09																																						
+294		actor2_prev_revenue	NA's   	3423																																						
+295		director_movies_cnt	Min.   	0																																						
+296		director_movies_cnt	1st Qu.	0																																						
+297		director_movies_cnt	Median 	1																																						
+298		director_movies_cnt	Mean   	1.952																																						
+299		director_movies_cnt	3rd Qu.	3																																						
+300		director_movies_cnt	Max.   	29																																						
+301		director_movies_cnt	NA																																							
+302		director_movies_5y_cnt	Min.   	0																																						
+303		director_movies_5y_cnt	1st Qu.	0																																						
+304		director_movies_5y_cnt	Median 	0																																						
+305		director_movies_5y_cnt	Mean   	0.6496																																						
+306		director_movies_5y_cnt	3rd Qu.	1																																						
+307		director_movies_5y_cnt	Max.   	6																																						
+308		director_movies_5y_cnt	NA																																							
+309		genre_adventure	Min.   	0																																						
+310		genre_adventure	1st Qu.	0																																						
+311		genre_adventure	Median 	0																																						
+312		genre_adventure	Mean   	0.1513																																						
+313		genre_adventure	3rd Qu.	0																																						
+314		genre_adventure	Max.   	1																																						
+315		genre_adventure	NA																																							
+316		genre_fantasy	Min.   	0																																						
+317		genre_fantasy	1st Qu.	0																																						
+318		genre_fantasy	Median 	0																																						
+319		genre_fantasy	Mean   	0.08515																																						
+320		genre_fantasy	3rd Qu.	0																																						
+321		genre_fantasy	Max.   	1																																						
+322		genre_fantasy	NA																																							
+323		genre_animation	Min.   	0																																						
+324		genre_animation	1st Qu.	0																																						
+325		genre_animation	Median 	0																																						
+326		genre_animation	Mean   	0.0518																																						
+327		genre_animation	3rd Qu.	0																																						
+328		genre_animation	Max.   	1																																						
+329		genre_animation	NA																																							
+330		genre_drama	Min.   	0																																						
+331		genre_drama	1st Qu.	0																																						
+332		genre_drama	Median 	0																																						
+333		genre_drama	Mean   	0.4984																																						
+334		genre_drama	3rd Qu.	1																																						
+335		genre_drama	Max.   	1																																						
+336		genre_drama	NA																																							
+337		genre_horror	Min.   	0																																						
+338		genre_horror	1st Qu.	0																																						
+339		genre_horror	Median 	0																																						
+340		genre_horror	Mean   	0.09966																																						
+341		genre_horror	3rd Qu.	0																																						
+342		genre_horror	Max.   	1																																						
+343		genre_horror	NA																																							
+344		genre_action	Min.   	0																																						
+345		genre_action	1st Qu.	0																																						
+346		genre_action	Median 	0																																						
+347		genre_action	Mean   	0.2353																																						
+348		genre_action	3rd Qu.	0																																						
+349		genre_action	Max.   	1																																						
+350		genre_action	NA																																							
+351		genre_comedy	Min.   	0																																						
+352		genre_comedy	1st Qu.	0																																						
+353		genre_comedy	Median 	0																																						
+354		genre_comedy	Mean   	0.3532																																						
+355		genre_comedy	3rd Qu.	1																																						
+356		genre_comedy	Max.   	1																																						
+357		genre_comedy	NA																																							
+358		genre_history	Min.   	0																																						
+359		genre_history	1st Qu.	0																																						
+360		genre_history	Median 	0																																						
+361		genre_history	Mean   	0.04																																						
+362		genre_history	3rd Qu.	0																																						
+363		genre_history	Max.   	1																																						
+364		genre_history	NA																																							
+365		genre_western	Min.   	0																																						
+366		genre_western	1st Qu.	0																																						
+367		genre_western	Median 	0																																						
+368		genre_western	Mean   	0.01586																																						
+369		genre_western	3rd Qu.	0																																						
+370		genre_western	Max.   	1																																						
+371		genre_western	NA																																							
+372		genre_thriller	Min.   	0																																						
+373		genre_thriller	1st Qu.	0																																						
+374		genre_thriller	Median 	0																																						
+375		genre_thriller	Mean   	0.2534																																						
+376		genre_thriller	3rd Qu.	1																																						
+377		genre_thriller	Max.   	1																																						
+378		genre_thriller	NA																																							
+379		genre_crime	Min.   	0																																						
+380		genre_crime	1st Qu.	0																																						
+381		genre_crime	Median 	0																																						
+382		genre_crime	Mean   	0.147																																						
+383		genre_crime	3rd Qu.	0																																						
+384		genre_crime	Max.   	1																																						
+385		genre_crime	NA																																							
+386		genre_documentary	Min.   	0																																						
+387		genre_documentary	1st Qu.	0																																						
+388		genre_documentary	Median 	0																																						
+389		genre_documentary	Mean   	0.02997																																						
+390		genre_documentary	3rd Qu.	0																																						
+391		genre_documentary	Max.   	1																																						
+392		genre_documentary	NA																																							
+393		genre_science_fiction	Min.   	0																																						
+394		genre_science_fiction	1st Qu.	0																																						
+395		genre_science_fiction	Median 	0																																						
+396		genre_science_fiction	Mean   	0.1009																																						
+397		genre_science_fiction	3rd Qu.	0																																						
+398		genre_science_fiction	Max.   	1																																						
+399		genre_science_fiction	NA																																							
+400		genre_mystery	Min.   	0																																						
+401		genre_mystery	1st Qu.	0																																						
+402		genre_mystery	Median 	0																																						
+403		genre_mystery	Mean   	0.07458																																						
+404		genre_mystery	3rd Qu.	0																																						
+405		genre_mystery	Max.   	1																																						
+406		genre_mystery	NA																																							
+407		genre_music	Min.   	0																																						
+408		genre_music	1st Qu.	0																																						
+409		genre_music	Median 	0																																						
+410		genre_music	Mean   	0.0362																																						
+411		genre_music	3rd Qu.	0																																						
+412		genre_music	Max.   	1																																						
+413		genre_music	NA																																							
+414		genre_romance	Min.   	0																																						
+415		genre_romance	1st Qu.	0																																						
+416		genre_romance	Median 	0																																						
+417		genre_romance	Mean   	0.1946																																						
+418		genre_romance	3rd Qu.	0																																						
+419		genre_romance	Max.   	1																																						
+420		genre_romance	NA																																							
+421		genre_family	Min.   	0																																						
+422		genre_family	1st Qu.	0																																						
+423		genre_family	Median 	0																																						
+424		genre_family	Mean   	0.09153																																						
+425		genre_family	3rd Qu.	0																																						
+426		genre_family	Max.   	1																																						
+427		genre_family	NA																																							
+428		genre_war	Min.   	0																																						
+429		genre_war	1st Qu.	0																																						
+430		genre_war	Median 	0																																						
+431		genre_war	Mean   	0.03295																																						
+432		genre_war	3rd Qu.	0																																						
+433		genre_war	Max.   	1																																						
+434		genre_war	NA																																							
+435		genre_foreign	Min.   	0																																						
+436		genre_foreign	1st Qu.	0																																						
+437		genre_foreign	Median 	0																																						
+438		genre_foreign	Mean   	0.01139																																						
+439		genre_foreign	3rd Qu.	0																																						
+440		genre_foreign	Max.   	1																																						
+441		genre_foreign	NA																																							
+442		depart_Art	Min.   	0																																						
+443		depart_Art	1st Qu.	0																																						
+444		depart_Art	Median 	1																																						
+445		depart_Art	Mean   	2.707																																						
+446		depart_Art	3rd Qu.	3																																						
+447		depart_Art	Max.   	36																																						
+448		depart_Art	NA's   	34																																						
+449		depart_Camera	Min.   	0																																						
+450		depart_Camera	1st Qu.	0																																						
+451		depart_Camera	Median 	1																																						
+452		depart_Camera	Mean   	1.802																																						
+453		depart_Camera	3rd Qu.	2																																						
+454		depart_Camera	Max.   	24																																						
+455		depart_Camera	NA's   	34																																						
+456		depart_Crew	Min.   	0																																						
+457		depart_Crew	1st Qu.	0																																						
+458		depart_Crew	Median 	0																																						
+459		depart_Crew	Mean   	2.388																																						
+460		depart_Crew	3rd Qu.	2																																						
+461		depart_Crew	Max.   	119																																						
+462		depart_Crew	NA's   	34																																						
+463		depart_Custom_Mkup	Min.   	0																																						
+464		depart_Custom_Mkup	1st Qu.	0																																						
+465		depart_Custom_Mkup	Median 	1																																						
+466		depart_Custom_Mkup	Mean   	2.074																																						
+467		depart_Custom_Mkup	3rd Qu.	2																																						
+468		depart_Custom_Mkup	Max.   	33																																						
+469		depart_Custom_Mkup	NA's   	34																																						
+470		depart_Directing	Min.   	0																																						
+471		depart_Directing	1st Qu.	1																																						
+472		depart_Directing	Median 	1																																						
+473		depart_Directing	Mean   	1.665																																						
+474		depart_Directing	3rd Qu.	2																																						
+475		depart_Directing	Max.   	30																																						
+476		depart_Directing	NA's   	34																																						
+477		depart_Editing	Min.   	0																																						
+478		depart_Editing	1st Qu.	0																																						
+479		depart_Editing	Median 	1																																						
+480		depart_Editing	Mean   	1.516																																						
+481		depart_Editing	3rd Qu.	2																																						
+482		depart_Editing	Max.   	21																																						
+483		depart_Editing	NA's   	34																																						
+484		depart_Lighting	Min.   	0																																						
+485		depart_Lighting	1st Qu.	0																																						
+486		depart_Lighting	Median 	0																																						
+487		depart_Lighting	Mean   	0.4262																																						
+488		depart_Lighting	3rd Qu.	0																																						
+489		depart_Lighting	Max.   	18																																						
+490		depart_Lighting	NA's   	34																																						
+491		depart_Production	Min.   	0																																						
+492		depart_Production	1st Qu.	1																																						
+493		depart_Production	Median 	4																																						
+494		depart_Production	Mean   	5.301																																						
+495		depart_Production	3rd Qu.	8																																						
+496		depart_Production	Max.   	38																																						
+497		depart_Production	NA's   	34																																						
+498		depart_Sound	Min.   	0																																						
+499		depart_Sound	1st Qu.	1																																						
+500		depart_Sound	Median 	1																																						
+501		depart_Sound	Mean   	3.064																																						
+502		depart_Sound	3rd Qu.	3																																						
+503		depart_Sound	Max.   	40																																						
+504		depart_Sound	NA's   	34																																						
+505		depart_Visual_Effects	Min.   	0																																						
+506		depart_Visual_Effects	1st Qu.	0																																						
+507		depart_Visual_Effects	Median 	0																																						
+508		depart_Visual_Effects	Mean   	1.29																																						
+509		depart_Visual_Effects	3rd Qu.	0																																						
+510		depart_Visual_Effects	Max.   	89																																						
+511		depart_Visual_Effects	NA's   	34																																						
+512		depart_Writing	Min.   	0																																						
+513		depart_Writing	1st Qu.	1																																						
+514		depart_Writing	Median 	2																																						
+515		depart_Writing	Mean   	2.222																																						
+516		depart_Writing	3rd Qu.	3																																						
+517		depart_Writing	Max.   	23																																						
+518		depart_Writing	NA's   	34																																						
+519		depart_Art_female	Min.   	0																																						
+520		depart_Art_female	1st Qu.	0																																						
+521		depart_Art_female	Median 	0																																						
+522		depart_Art_female	Mean   	0.2351																																						
+523		depart_Art_female	3rd Qu.	0																																						
+524		depart_Art_female	Max.   	7																																						
+525		depart_Art_female	NA's   	34																																						
+526		depart_Camera_female	Min.   	0																																						
+527		depart_Camera_female	1st Qu.	0																																						
+528		depart_Camera_female	Median 	0																																						
+529		depart_Camera_female	Mean   	0.02043																																						
+530		depart_Camera_female	3rd Qu.	0																																						
+531		depart_Camera_female	Max.   	3																																						
+532		depart_Camera_female	NA's   	34																																						
+533		depart_Crew_female	Min.   	0																																						
+534		depart_Crew_female	1st Qu.	0																																						
+535		depart_Crew_female	Median 	0																																						
+536		depart_Crew_female	Mean   	0.06443																																						
+537		depart_Crew_female	3rd Qu.	0																																						
+538		depart_Crew_female	Max.   	10																																						
+539		depart_Crew_female	NA's   	34																																						
+540		depart_Custom_Mkup_female	Min.   	0																																						
+541		depart_Custom_Mkup_female	1st Qu.	0																																						
+542		depart_Custom_Mkup_female	Median 	0																																						
+543		depart_Custom_Mkup_female	Mean   	0.3535																																						
+544		depart_Custom_Mkup_female	3rd Qu.	1																																						
+545		depart_Custom_Mkup_female	Max.   	6																																						
+546		depart_Custom_Mkup_female	NA's   	34																																						
+547		depart_Directing_female	Min.   	0																																						
+548		depart_Directing_female	1st Qu.	0																																						
+549		depart_Directing_female	Median 	0																																						
+550		depart_Directing_female	Mean   	0.1535																																						
+551		depart_Directing_female	3rd Qu.	0																																						
+552		depart_Directing_female	Max.   	4																																						
+553		depart_Directing_female	NA's   	34																																						
+554		depart_Editing_female	Min.   	0																																						
+555		depart_Editing_female	1st Qu.	0																																						
+556		depart_Editing_female	Median 	0																																						
+557		depart_Editing_female	Mean   	0.1216																																						
+558		depart_Editing_female	3rd Qu.	0																																						
+559		depart_Editing_female	Max.   	5																																						
+560		depart_Editing_female	NA's   	34																																						
+561		depart_Lighting_female	Min.   	0																																						
+562		depart_Lighting_female	1st Qu.	0																																						
+563		depart_Lighting_female	Median 	0																																						
+564		depart_Lighting_female	Mean   	0.00068																																						
+565		depart_Lighting_female	3rd Qu.	0																																						
+566		depart_Lighting_female	Max.   	1																																						
+567		depart_Lighting_female	NA's   	34																																						
+568		depart_Production_female	Min.   	0																																						
+569		depart_Production_female	1st Qu.	0																																						
+570		depart_Production_female	Median 	0																																						
+571		depart_Production_female	Mean   	0.9396																																						
+572		depart_Production_female	3rd Qu.	2																																						
+573		depart_Production_female	Max.   	12																																						
+574		depart_Production_female	NA's   	34																																						
+575		depart_Sound_female	Min.   	0																																						
+576		depart_Sound_female	1st Qu.	0																																						
+577		depart_Sound_female	Median 	0																																						
+578		depart_Sound_female	Mean   	0.07914																																						
+579		depart_Sound_female	3rd Qu.	0																																						
+580		depart_Sound_female	Max.   	6																																						
+581		depart_Sound_female	NA's   	34																																						
+582		depart_Visual_Effects_female	Min.   	0																																						
+583		depart_Visual_Effects_female	1st Qu.	0																																						
+584		depart_Visual_Effects_female	Median 	0																																						
+585		depart_Visual_Effects_female	Mean   	0.00845																																						
+586		depart_Visual_Effects_female	3rd Qu.	0																																						
+587		depart_Visual_Effects_female	Max.   	2																																						
+588		depart_Visual_Effects_female	NA's   	34																																						
+589		depart_Writing_female	Min.   	0																																						
+590		depart_Writing_female	1st Qu.	0																																						
+591		depart_Writing_female	Median 	0																																						
+592		depart_Writing_female	Mean   	0.1242																																						
+593		depart_Writing_female	3rd Qu.	0																																						
+594		depart_Writing_female	Max.   	5																																						
+595		depart_Writing_female	NA's   	34																																						
